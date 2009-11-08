@@ -1,0 +1,5 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2848
+
+On pressing of F12 key starts the cursor walking to the top and then bottom of the file. Rate sate by updatetime. If it's too slow for you put set ut=1000 somewhere in you vimrc, that will make it walk every second. Press F11 to switch direction. (Simply change the mappings if you'd like to use different keys.)
+
+Works very will with "Changing Colour" script. (http://www.vim.org/scripts/script.php?script_id=2658). Coding will now never be boring again.
