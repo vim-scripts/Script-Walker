@@ -4,6 +4,10 @@
 " | START                                                                       |
 " +-----------------------------------------------------------------------------+
 " | REVISONS:                                                                   |
+" | MON 9TH OCT 2009:    1.2                                                    |
+" |                      Corrected the message which incorrectly reported the   |
+" |                      walking direction when you switch walking on as the    |
+" |                      wrong way.                                             |
 " | MON 9TH OCT 2009:    1.1                                                    |
 " |                      Deleted a redundant StopWalking() function, added      |
 " |                      a new map to change walking direction, made the        |
@@ -22,7 +26,7 @@ autocmd CursorHold * call DoWalk()
 
 " Toggle walking 'on/off' 
 function ToggleWalk()
-:	if g:walking == 1
+:	if g:walkdir == 1
 :		let dirinfo = "up"
 :	else
 :		let dirinfo = "down"
